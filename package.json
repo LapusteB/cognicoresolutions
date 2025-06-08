@@ -1,0 +1,25 @@
+{
+  "name": "cognicore-solutions-website",
+  "version": "1.0.0",
+  "description": "Professional website for Cognicore Solutions LLC - Smart Solutions for a Smarter Business",
+  "main": "index.html",
+  "scripts": {
+    "start": "npx serve .",
+    "build": "echo 'Static HTML site - no build required'",
+    "dev": "npx serve . -p 3000"
+  },
+  "keywords": [
+    "CRM automation",
+    "AI integration",
+    "SaaS onboarding",
+    "business automation",
+    "technology consulting"
+  ],
+  "author": "Cognicore Solutions LLC",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/cognicoresolutions/website"
+  },
+  "homepage": "https://cognicoresolutions.com"
+} 
