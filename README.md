@@ -64,7 +64,7 @@ Simply upload the `index.html` file and any assets to your hosting provider.
 
 ## 📞 Contact Information
 
-- **Email**: contact@cognicoresolutions.com
+- **Email**: team@cognicoresolutions.com
 - **Phone**: +1 (555) 123-4567
 - **Location**: United States (Remote & On-site Services)
 
