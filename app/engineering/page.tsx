@@ -120,10 +120,106 @@ export default function Engineering() {
                 </article>
               ))}
             </div>
-            <p className="mt-14 max-w-2xl border-l border-amber/40 pl-4 text-sm leading-relaxed text-dim">
-              The full build-out of this page (architecture walkthroughs and a
-              real engineering case study) ships next. What&apos;s listed
-              above is what we deliver today.
+          </div>
+        </section>
+
+        {/* Case study: Globe Life / glonboarding.com */}
+        <section className="border-b border-line">
+          <div className="mx-auto max-w-6xl px-5 py-20 sm:px-8">
+            <p className="font-mono text-xs tracking-widest text-amber">
+              CASE STUDY | GLOBE LIFE
+            </p>
+            <h2 className="mt-3 font-display text-2xl font-semibold tracking-tight text-text sm:text-3xl">
+              glonboarding.com: an event-driven recruiting platform
+            </h2>
+            <p className="mt-4 max-w-2xl leading-relaxed text-dim">
+              Globe Life needed a system to run their independent-agent
+              recruiting pipeline end to end: booking, reminders, approval,
+              onboarding. We designed and shipped the whole platform.
+            </p>
+
+            <div className="mt-10 grid gap-8 lg:grid-cols-2">
+              <div className="term-window">
+                <div className="term-titlebar">
+                  <span className="term-dot bg-danger/50" />
+                  <span className="term-dot bg-amber/50" />
+                  <span className="term-dot bg-signal/50" />
+                  <span className="ml-2">n8n · reminder-pipeline</span>
+                </div>
+                <div className="term-body crt px-6 py-5 font-mono text-[13px] leading-[1.85] sm:text-sm">
+                  <p className="text-dim">
+                    // webhook payload carries the meeting start time
+                  </p>
+                  <p className="text-text">
+                    start = payload.scheduled_event.start_time
+                  </p>
+                  <p className="text-text">wait_24h = start - now - 24h</p>
+                  <p className="text-text">wait_12h = start - now - 12h</p>
+                  <p className="text-text">wait_60m = start - now - 60m</p>
+                  <p className="text-text">wait_10m = start - now - 10m</p>
+                  <p className="mt-3 text-dim">
+                    // chain Wait nodes on the delta between each interval,
+                  </p>
+                  <p className="text-dim">
+                    // so four reminders fire off one trigger, in sequence
+                  </p>
+                  <p className="mt-3 text-signal crt-glow">
+                    → SMS via Telnyx at 24h, 12h, 60m, 10m
+                  </p>
+                </div>
+              </div>
+
+              <div>
+                <h3 className="font-display text-lg font-semibold tracking-tight text-text">
+                  Architecture
+                </h3>
+                <ul className="mt-4 space-y-3 text-[15px] leading-relaxed text-dim">
+                  <li className="flex gap-2">
+                    <span className="text-amber">→</span>
+                    React front end on AWS Amplify, with role-scoped
+                    dashboards for organizational leaders, sales leaders, and
+                    new hires, plus a guided onboarding checklist after
+                    signup
+                  </li>
+                  <li className="flex gap-2">
+                    <span className="text-amber">→</span>
+                    Two n8n pipelines running behind AWS Elastic Beanstalk
+                    and EC2: one triggered by Calendly bookings, one by
+                    Jotform applications
+                  </li>
+                  <li className="flex gap-2">
+                    <span className="text-amber">→</span>
+                    Supabase as the system of record: candidate profiles,
+                    new-hire records, and the lead-nurture log
+                  </li>
+                  <li className="flex gap-2">
+                    <span className="text-amber">→</span>
+                    Telnyx API for transactional SMS, including an
+                    automatic welcome message to the whole team the moment a
+                    recruiter approves a candidate
+                  </li>
+                  <li className="flex gap-2">
+                    <span className="text-amber">→</span>
+                    A scheduled job flags stalled leads and has AI draft the
+                    follow-up email
+                  </li>
+                </ul>
+              </div>
+            </div>
+
+            <p className="mt-10 max-w-2xl border-l border-amber/40 pl-4 text-sm leading-relaxed text-dim">
+              Result: recruiters got back roughly 10 hours a week previously
+              spent on manual outreach and spreadsheet upkeep. That state now
+              lives in Supabase and updates itself. Live at{" "}
+              <a
+                href="https://glonboarding.com"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="text-signal hover:underline"
+              >
+                glonboarding.com
+              </a>
+              .
             </p>
           </div>
         </section>

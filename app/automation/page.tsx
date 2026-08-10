@@ -79,10 +79,80 @@ export default function Automation() {
                 </div>
               ))}
             </div>
-            <p className="mt-14 max-w-2xl border-l border-cyan/40 pl-4 text-sm leading-relaxed text-dim">
-              A full build-out of this page (with a real automation case study)
-              is on the way. The services above are live now; the depth is
-              coming.
+          </div>
+        </section>
+
+        {/* Case study: Globe Life / glonboarding.com */}
+        <section className="border-b border-line">
+          <div className="mx-auto max-w-6xl px-5 py-20 sm:px-8">
+            <p className="font-mono text-sm text-dim">
+              <span className="text-amber">➜ </span>
+              <span className="text-text">
+                cognicore cat ./automation/case-study.log
+              </span>
+            </p>
+            <h2 className="mt-4 font-display text-2xl font-semibold tracking-tight text-text sm:text-3xl">
+              Globe Life: a recruiting pipeline that used to run on
+              spreadsheets
+            </h2>
+            <p className="mt-4 max-w-2xl leading-relaxed text-dim">
+              Globe Life recruits independent life insurance agents. Every
+              step, from booking an intro call to inviting a new hire, was a
+              recruiter manually texting, calling, and updating a
+              spreadsheet. We replaced that with three connected
+              automations.
+            </p>
+
+            <div className="mt-10 grid gap-8 md:grid-cols-3">
+              <div className="border-t border-line pt-6">
+                <p className="font-mono text-xs text-faint">01 · reminders</p>
+                <h3 className="mt-2 font-display text-lg font-semibold tracking-tight text-text">
+                  Meeting reminders
+                </h3>
+                <p className="mt-3 leading-relaxed text-dim">
+                  A Calendly booking triggers an n8n workflow that calculates
+                  the exact wait until the meeting and fires SMS reminders
+                  through Telnyx at 24 hours, 12 hours, 60 minutes, and 10
+                  minutes out.
+                </p>
+              </div>
+              <div className="border-t border-line pt-6">
+                <p className="font-mono text-xs text-faint">02 · onboarding</p>
+                <h3 className="mt-2 font-display text-lg font-semibold tracking-tight text-text">
+                  New-hire invites
+                </h3>
+                <p className="mt-3 leading-relaxed text-dim">
+                  When a recruiter approves a candidate, a second workflow
+                  provisions their record and sends a welcome text to the
+                  whole team automatically. No one has to type it.
+                </p>
+              </div>
+              <div className="border-t border-line pt-6">
+                <p className="font-mono text-xs text-faint">03 · follow-up</p>
+                <h3 className="mt-2 font-display text-lg font-semibold tracking-tight text-text">
+                  Stalled-lead recovery
+                </h3>
+                <p className="mt-3 leading-relaxed text-dim">
+                  A scheduled job checks for candidates who&apos;ve gone
+                  quiet and has AI draft the follow-up email, so nobody
+                  falls through the cracks.
+                </p>
+              </div>
+            </div>
+
+            <p className="mt-10 max-w-2xl border-l border-signal/40 pl-4 text-sm leading-relaxed text-dim">
+              Result: recruiters got back roughly 10 hours a week they used
+              to spend manually texting leads and keeping spreadsheets
+              current. Live at{" "}
+              <a
+                href="https://glonboarding.com"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="text-signal hover:underline"
+              >
+                glonboarding.com
+              </a>
+              .
             </p>
           </div>
         </section>

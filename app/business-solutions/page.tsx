@@ -125,16 +125,16 @@ export default function BusinessSolutions() {
           </div>
         </section>
 
-        {/* Case study section (placeholder until a real project is supplied) */}
+        {/* Case study: Globe Life / glonboarding.com */}
         <section className="border-b border-line">
           <div className="mx-auto max-w-6xl px-5 py-20 sm:px-8">
             <h2 className="font-display text-2xl font-semibold tracking-tight text-text sm:text-3xl">
               From a real project
             </h2>
 
-            <div className="mt-8 rounded-lg border border-dashed border-amber/50 bg-surface p-6 sm:p-10">
-              <p className="font-mono text-xs tracking-widest text-amber">
-                [PLACEHOLDER: REAL CASE STUDY TO BE SUPPLIED BY COGNICORE]
+            <div className="mt-8 rounded-lg border border-line bg-surface p-6 shadow-panel sm:p-10">
+              <p className="font-mono text-xs tracking-widest text-signal">
+                GLOBE LIFE | GLONBOARDING.COM
               </p>
               <div className="mt-6 grid gap-8 lg:grid-cols-3">
                 <div>
@@ -142,8 +142,10 @@ export default function BusinessSolutions() {
                     the client
                   </h3>
                   <p className="mt-2 leading-relaxed text-dim">
-                    [Client type &amp; situation, e.g. a service business
-                    whose leads were going cold in a shared inbox.]
+                    Globe Life recruits independent life insurance sales
+                    agents. Every candidate got a spot on a recruiter&apos;s
+                    spreadsheet and a stream of manual texts and calls to keep
+                    them engaged before their intro meeting.
                   </p>
                 </div>
                 <div>
@@ -151,8 +153,11 @@ export default function BusinessSolutions() {
                     what we built
                   </h3>
                   <p className="mt-2 leading-relaxed text-dim">
-                    [The system delivered (lead capture, automated follow-up,
-                    website, CRM) in plain language.]
+                    Glonboarding.com: a CRM built around their actual
+                    recruiting pipeline. Every booked meeting gets automatic
+                    text and email reminders, every new-hire invite and
+                    onboarding step tracks itself, and recruiters see the
+                    whole pipeline in one dashboard instead of a spreadsheet.
                   </p>
                 </div>
                 <div>
@@ -160,14 +165,23 @@ export default function BusinessSolutions() {
                     what changed
                   </h3>
                   <p className="mt-2 leading-relaxed text-dim">
-                    [The real, measured outcome: response time, close rate,
-                    hours saved per week.]
+                    Recruiters got back roughly 10 hours a week they used to
+                    spend manually texting leads and keeping spreadsheets
+                    current.
                   </p>
                 </div>
               </div>
               <p className="mt-8 border-t border-line pt-5 text-sm text-faint">
-                This panel ships only after the real project details are in.
-                We don&apos;t publish invented results.
+                Live at{" "}
+                <a
+                  href="https://glonboarding.com"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="text-signal hover:underline"
+                >
+                  glonboarding.com
+                </a>
+                .
               </p>
             </div>
           </div>

@@ -42,7 +42,7 @@ A genuine team/agency (confirmed: "we" is truthful, multiple people deliver work
 ## Evidence on Hand
 
 - Real outcome claims (user-confirmed genuine): 70% faster application completion on a life-insurance digital onboarding project; 85% order-processing efficiency improvement on an e-commerce automation project.
-- Real case studies exist and will be supplied by the user (one per tier minimum). Until supplied, case-study layouts ship with clearly labeled [PLACEHOLDER] content. Nothing invented ships as real.
+- Real case study (live on all three tier pages, each in that tier's register): Globe Life, a life insurance company recruiting independent sales agents. Built glonboarding.com, a recruiting CRM (Calendly-triggered n8n reminder pipeline via Telnyx SMS, Jotform-driven onboarding pipeline on AWS Elastic Beanstalk/EC2, Supabase as system of record, React front end on AWS Amplify, AI-drafted follow-up for stalled leads). Confirmed real outcome: recruiters got back roughly 10 hours a week previously spent on manual outreach and spreadsheet upkeep.
 - **Do not fabricate:** client logos, statistics beyond the two confirmed above, testimonials.
 
 ## Product Principles
