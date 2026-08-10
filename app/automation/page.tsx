@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import ContactForm from "@/components/ContactForm";
 import NeuralField from "@/components/NeuralField";
+import AgentNetwork from "@/components/three/AgentNetwork";
 import SiteFooter from "@/components/SiteFooter";
 import SiteNav from "@/components/SiteNav";
 
@@ -41,6 +42,8 @@ export default function Automation() {
         <section className="relative overflow-hidden border-b border-line">
           <NeuralField density={0.45} className="opacity-50" />
           <div className="relative mx-auto max-w-6xl px-5 pb-16 pt-28 sm:px-8 md:pt-36">
+            <div className="grid items-center gap-10 lg:grid-cols-[1.1fr_1fr]">
+              <div>
             <p className="font-mono text-xs tracking-widest text-cyan">
               PATH 2 | FOR OPERATORS
             </p>
@@ -59,6 +62,11 @@ export default function Automation() {
             >
               describe your workflow
             </a>
+              </div>
+              <div className="relative h-64 overflow-hidden rounded-lg border border-line bg-surface/30 shadow-panel sm:h-80 lg:h-[26rem]">
+                <AgentNetwork className="absolute inset-0" />
+              </div>
+            </div>
           </div>
         </section>
 

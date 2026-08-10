@@ -1,6 +1,7 @@
 import Link from "next/link";
 import ContactForm from "@/components/ContactForm";
 import NeuralField from "@/components/NeuralField";
+import PathShowcase from "@/components/three/PathShowcase";
 import SiteFooter from "@/components/SiteFooter";
 import SiteNav from "@/components/SiteNav";
 import Terminal from "@/components/Terminal";
@@ -171,6 +172,19 @@ export default function Home() {
                   </span>
                 </span>
               </Link>
+            </div>
+          </div>
+        </section>
+
+        {/* ---- Live look at each path's system, cycling ---- */}
+        <section className="border-b border-line">
+          <div className="mx-auto max-w-6xl px-5 py-20 sm:px-8">
+            <p className="font-mono text-sm text-dim">
+              <span className="text-amber">➜ </span>
+              <span className="text-text">cognicore render ./paths --live</span>
+            </p>
+            <div className="mt-8">
+              <PathShowcase />
             </div>
           </div>
         </section>

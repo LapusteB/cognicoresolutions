@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import ContactForm from "@/components/ContactForm";
 import NeuralField from "@/components/NeuralField";
+import CloudPipeline from "@/components/three/CloudPipeline";
 import SiteFooter from "@/components/SiteFooter";
 import SiteNav from "@/components/SiteNav";
 import Terminal from "@/components/Terminal";
@@ -84,6 +85,9 @@ export default function Engineering() {
                   { kind: "out", text: "no invented benchmarks found ✓", tone: "amber" },
                 ]}
               />
+            </div>
+            <div className="relative mt-10 h-64 overflow-hidden rounded-lg border border-line bg-surface/30 shadow-panel sm:h-80">
+              <CloudPipeline className="absolute inset-0" />
             </div>
           </div>
         </section>
