@@ -61,7 +61,7 @@ export async function POST(req: Request) {
     from: FROM,
     to: [TO],
     replyTo: email,
-    subject: `Website inquiry — ${name}${body.company ? ` (${body.company.trim()})` : ""}`,
+    subject: `Website inquiry from ${name}${body.company ? ` (${body.company.trim()})` : ""}`,
     text: [
       `Name: ${name}`,
       `Email: ${email}`,

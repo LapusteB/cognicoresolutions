@@ -16,7 +16,7 @@ export default function SiteFooter() {
             </div>
             <p className="mt-4 text-sm leading-relaxed text-dim">
               US-based technology consultancy. Growth systems, automation, and
-              data &amp; AI engineering — delivered by people who build for a
+              data &amp; AI engineering, delivered by people who build for a
               living.
             </p>
           </div>

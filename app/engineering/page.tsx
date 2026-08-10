@@ -8,20 +8,20 @@ import Terminal from "@/components/Terminal";
 export const metadata: Metadata = {
   title: "Data & AI Engineering",
   description:
-    "AWS Lambda and event-driven architecture, Spark/Python data engineering, RAG systems, and full-stack platform work — senior engineering, delivered.",
+    "AWS Lambda and event-driven architecture, Spark/Python data engineering, RAG systems, and full-stack platform work: senior engineering, delivered.",
 };
 
 const capabilities = [
   {
     path: "aws/",
     title: "AWS & Event-Driven Architecture",
-    body: "Lambda, SQS/SNS, EventBridge, Step Functions. Systems designed around events instead of cron jobs and polling — cheaper to run, easier to reason about, built to fail loudly and recover cleanly.",
+    body: "Lambda, SQS/SNS, EventBridge, Step Functions. Systems designed around events instead of cron jobs and polling: cheaper to run, easier to reason about, built to fail loudly and recover cleanly.",
     stack: ["Lambda", "EventBridge", "SQS", "Step Functions", "DynamoDB"],
   },
   {
     path: "data/",
     title: "Data Engineering",
-    body: "Spark and Python pipelines that turn raw operational data into something analysts and models can actually use — with schema contracts, backfills, and observability, not just a DAG that ran once.",
+    body: "Spark and Python pipelines that turn raw operational data into something analysts and models can actually use, with schema contracts, backfills, and observability, not just a DAG that ran once.",
     stack: ["Spark", "Python", "Airflow", "dbt", "Parquet"],
   },
   {
@@ -33,7 +33,7 @@ const capabilities = [
   {
     path: "platform/",
     title: "Full-Stack Platform Work",
-    body: "The product surface on top: Next.js, React, Supabase/Postgres, auth, billing, CI/CD. One team from the event bus to the button — no handoff gap where bugs live.",
+    body: "The product surface on top: Next.js, React, Supabase/Postgres, auth, billing, CI/CD. One team from the event bus to the button, no handoff gap where bugs live.",
     stack: ["Next.js", "React", "Postgres", "Supabase", "Vercel"],
   },
 ];
@@ -53,7 +53,7 @@ export default function Engineering() {
             <div className="grid items-start gap-10 lg:grid-cols-[1fr_1fr]">
               <div>
                 <p className="font-mono text-xs tracking-widest text-amber">
-                  PATH 3 — FOR TECHNICAL TEAMS
+                  PATH 3 | FOR TECHNICAL TEAMS
                 </p>
                 <h1 className="mt-4 font-display text-3xl font-bold leading-[1.12] tracking-tight text-text sm:text-4xl md:text-[2.75rem]">
                   Senior engineering, without the enterprise wrapper.
@@ -72,7 +72,7 @@ export default function Engineering() {
                 </a>
               </div>
               <Terminal
-                title="cognicore@prod — session"
+                title="cognicore@prod · session"
                 className="hidden sm:block"
                 lines={[
                   { kind: "cmd", text: "cognicore ls ./engineering" },
@@ -121,8 +121,8 @@ export default function Engineering() {
               ))}
             </div>
             <p className="mt-14 max-w-2xl border-l border-amber/40 pl-4 text-sm leading-relaxed text-dim">
-              The full build-out of this page — architecture walkthroughs and a
-              real engineering case study — ships next. What&apos;s listed
+              The full build-out of this page (architecture walkthroughs and a
+              real engineering case study) ships next. What&apos;s listed
               above is what we deliver today.
             </p>
           </div>
@@ -137,7 +137,7 @@ export default function Engineering() {
                 </h2>
                 <p className="mt-4 max-w-sm leading-relaxed text-dim">
                   Stack, scale, and what&apos;s breaking. An engineer reads
-                  every message — you&apos;ll get a technical reply, not a
+                  every message: you&apos;ll get a technical reply, not a
                   sales sequence.
                 </p>
               </div>

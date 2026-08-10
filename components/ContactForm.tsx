@@ -45,7 +45,7 @@ export default function ContactForm({ defaultTopic }: { defaultTopic?: string })
           <span className="term-dot bg-danger/50" />
           <span className="term-dot bg-amber/50" />
           <span className="term-dot bg-signal/50" />
-          <span className="ml-2">message — sent</span>
+          <span className="ml-2">message sent</span>
         </div>
         <div className="term-body crt px-6 py-8 font-mono text-sm leading-relaxed">
           <p className="text-signal crt-glow">✓ Message delivered.</p>
@@ -136,7 +136,7 @@ export default function ContactForm({ defaultTopic }: { defaultTopic?: string })
             defaultValue={defaultTopic ?? "Not sure yet"}
             className={inputClass}
           >
-            <option>Business growth — leads, website, CRM</option>
+            <option>Business growth: leads, website, CRM</option>
             <option>Systems &amp; automation</option>
             <option>Data &amp; AI engineering</option>
             <option>Not sure yet</option>

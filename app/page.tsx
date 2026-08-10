@@ -28,7 +28,7 @@ export default function Home() {
                 </h1>
                 <p className="mt-6 max-w-xl text-lg leading-relaxed text-dim">
                   Cognicore Solutions builds the systems behind growing
-                  businesses — from your first lead-generation funnel to
+                  businesses, from your first lead-generation funnel to
                   production data platforms. Pick the path that matches where
                   you are; the same team is behind all three.
                 </p>
@@ -49,7 +49,7 @@ export default function Home() {
               </div>
 
               <Terminal
-                title="cognicore — router"
+                title="cognicore · router"
                 className="rise hidden sm:block"
                 lines={[
                   { kind: "cmd", text: "cognicore route --visitor" },
@@ -65,7 +65,7 @@ export default function Home() {
 
             {/* ---- Three escalating tiles ---- */}
             <div id="paths" className="mt-16 grid gap-5 scroll-mt-24 md:grid-cols-3">
-              {/* Tier 1 — cleanest */}
+              {/* Tier 1: cleanest */}
               <Link
                 href="/business-solutions"
                 className="group relative flex flex-col rounded-lg border border-line bg-surface p-7 shadow-panel transition-all duration-300 hover:-translate-y-1 hover:border-signal/50 hover:shadow-deep"
@@ -92,7 +92,7 @@ export default function Home() {
                 </p>
               </Link>
 
-              {/* Tier 2 — mono labels + grid material */}
+              {/* Tier 2: mono labels + grid material */}
               <Link
                 href="/automation"
                 className="group relative flex flex-col rounded-lg border border-line bg-surface p-7 shadow-panel transition-all duration-300 hover:-translate-y-1 hover:border-cyan/50 hover:shadow-deep"
@@ -128,7 +128,7 @@ export default function Home() {
                 </p>
               </Link>
 
-              {/* Tier 3 — full terminal chrome */}
+              {/* Tier 3: full terminal chrome */}
               <Link
                 href="/engineering"
                 className="group term-window flex flex-col transition-all duration-300 hover:-translate-y-1 hover:border-amber/50 hover:shadow-deep"
@@ -137,7 +137,7 @@ export default function Home() {
                   <span className="term-dot bg-danger/50" />
                   <span className="term-dot bg-amber/50" />
                   <span className="term-dot bg-signal/50" />
-                  <span className="ml-2">path-3 — engineering</span>
+                  <span className="ml-2">path-3 · engineering</span>
                 </span>
                 <span className="term-body crt flex flex-1 flex-col px-7 py-6">
                   <span className="font-mono text-xs tracking-widest text-amber">
@@ -221,7 +221,7 @@ export default function Home() {
                   <p>
                     <span className="text-faint">[insurance]</span>{" "}
                     <span className="text-text">
-                      digital onboarding rebuilt —{" "}
+                      digital onboarding rebuilt:{" "}
                     </span>
                     <span className="text-signal crt-glow">
                       applications completed 70% faster
@@ -231,7 +231,7 @@ export default function Home() {
                   <p className="mt-3">
                     <span className="text-faint">[e-commerce]</span>{" "}
                     <span className="text-text">
-                      order workflow automated end-to-end —{" "}
+                      order workflow automated end-to-end:{" "}
                     </span>
                     <span className="text-signal crt-glow">
                       processing efficiency up 85%
@@ -257,7 +257,7 @@ export default function Home() {
                   Tell us what&apos;s in the way.
                 </h2>
                 <p className="mt-4 max-w-sm leading-relaxed text-dim">
-                  Every message lands with the team — no ticket queue, no
+                  Every message lands with the team. No ticket queue, no
                   qualification bot. We reply within one business day.
                 </p>
                 <dl className="mt-8 space-y-4 text-sm">

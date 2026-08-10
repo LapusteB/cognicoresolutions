@@ -21,13 +21,13 @@ const hanken = Hanken_Grotesk({
 export const metadata: Metadata = {
   metadataBase: new URL("https://cognicoresolutions.com"),
   title: {
-    default: "Cognicore Solutions — Automation & AI Engineering",
-    template: "%s — Cognicore Solutions",
+    default: "Cognicore Solutions | Automation & AI Engineering",
+    template: "%s | Cognicore Solutions",
   },
   description:
     "US-based technology consultancy. Lead generation and CRM automation for growing businesses, workflow and AI systems for operators, and data/AI engineering for technical teams.",
   openGraph: {
-    title: "Cognicore Solutions — Automation & AI Engineering",
+    title: "Cognicore Solutions | Automation & AI Engineering",
     description:
       "One firm, three depths: business growth foundations, systems & automation, and data & AI engineering.",
     type: "website",

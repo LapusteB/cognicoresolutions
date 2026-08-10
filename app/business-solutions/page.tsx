@@ -13,13 +13,13 @@ const stages = [
   {
     stage: "stage 01",
     title: "Lead Generation",
-    body: "People who need what you sell should be able to find you. We build the funnels, forms, and campaigns that bring a steady stream of real inquiries — not a list of cold names.",
+    body: "People who need what you sell should be able to find you. We build the funnels, forms, and campaigns that bring a steady stream of real inquiries, not a list of cold names.",
     gets: ["Landing pages that convert", "Ad & campaign plumbing", "Lead capture that just works"],
   },
   {
     stage: "stage 02",
     title: "Lead Nurture",
-    body: "Most sales are lost in the follow-up nobody had time for. We set up the emails and texts that go out on their own — so every lead hears back in minutes, not days.",
+    body: "Most sales are lost in the follow-up nobody had time for. We set up the emails and texts that go out on their own, so every lead hears back in minutes, not days.",
     gets: ["Automated email & SMS follow-up", "Response within minutes, 24/7", "No lead left waiting"],
   },
   {
@@ -31,7 +31,7 @@ const stages = [
   {
     stage: "stage 04",
     title: "CRM Automation",
-    body: "One place where every customer, conversation, and deal lives — updated automatically. You see exactly where every opportunity stands without typing a thing.",
+    body: "One place where every customer, conversation, and deal lives, updated automatically. You see exactly where every opportunity stands without typing a thing.",
     gets: ["Salesforce, HubSpot, or Zoho", "Pipeline updates itself", "Nothing falls through cracks"],
   },
 ];
@@ -45,13 +45,13 @@ export default function BusinessSolutions() {
         <section className="border-b border-line">
           <div className="mx-auto max-w-6xl px-5 pb-16 pt-28 sm:px-8 md:pt-36">
             <p className="font-mono text-xs tracking-widest text-signal">
-              PATH 1 — FOR BUSINESS OWNERS
+              PATH 1 | FOR BUSINESS OWNERS
             </p>
             <h1 className="mt-4 max-w-3xl font-display text-3xl font-bold leading-[1.12] tracking-tight text-text sm:text-4xl md:text-5xl">
               Your next customer shouldn&apos;t slip through the cracks.
             </h1>
             <p className="mt-6 max-w-2xl text-lg leading-relaxed text-dim">
-              We build the four pieces every growing business needs — a way to
+              We build the four pieces every growing business needs: a way to
               attract leads, a system that follows up instantly, a website that
               sells, and a CRM that keeps it all organized. Connected, so
               nothing gets lost between them.
@@ -82,7 +82,7 @@ export default function BusinessSolutions() {
             <p className="mt-4 max-w-2xl leading-relaxed text-dim">
               Each piece feeds the next: a lead comes in, follow-up starts on
               its own, your website closes the deal, and your CRM records every
-              step. That connection is the work — and it&apos;s why it holds up
+              step. That connection is the work, and it&apos;s why it holds up
               after we leave.
             </p>
 
@@ -125,7 +125,7 @@ export default function BusinessSolutions() {
           </div>
         </section>
 
-        {/* ---- Case study (labeled placeholder — real project to be supplied) ---- */}
+        {/* Case study section (placeholder until a real project is supplied) */}
         <section className="border-b border-line">
           <div className="mx-auto max-w-6xl px-5 py-20 sm:px-8">
             <h2 className="font-display text-2xl font-semibold tracking-tight text-text sm:text-3xl">
@@ -134,7 +134,7 @@ export default function BusinessSolutions() {
 
             <div className="mt-8 rounded-lg border border-dashed border-amber/50 bg-surface p-6 sm:p-10">
               <p className="font-mono text-xs tracking-widest text-amber">
-                [PLACEHOLDER — REAL CASE STUDY TO BE SUPPLIED BY COGNICORE]
+                [PLACEHOLDER: REAL CASE STUDY TO BE SUPPLIED BY COGNICORE]
               </p>
               <div className="mt-6 grid gap-8 lg:grid-cols-3">
                 <div>
@@ -142,7 +142,7 @@ export default function BusinessSolutions() {
                     the client
                   </h3>
                   <p className="mt-2 leading-relaxed text-dim">
-                    [Client type &amp; situation — e.g. a service business
+                    [Client type &amp; situation, e.g. a service business
                     whose leads were going cold in a shared inbox.]
                   </p>
                 </div>
@@ -151,8 +151,8 @@ export default function BusinessSolutions() {
                     what we built
                   </h3>
                   <p className="mt-2 leading-relaxed text-dim">
-                    [The system delivered — lead capture, automated follow-up,
-                    website, CRM — in plain language.]
+                    [The system delivered (lead capture, automated follow-up,
+                    website, CRM) in plain language.]
                   </p>
                 </div>
                 <div>
@@ -160,14 +160,14 @@ export default function BusinessSolutions() {
                     what changed
                   </h3>
                   <p className="mt-2 leading-relaxed text-dim">
-                    [The real, measured outcome — response time, close rate,
+                    [The real, measured outcome: response time, close rate,
                     hours saved per week.]
                   </p>
                 </div>
               </div>
               <p className="mt-8 border-t border-line pt-5 text-sm text-faint">
-                This panel ships only after the real project details are in —
-                we don&apos;t publish invented results.
+                This panel ships only after the real project details are in.
+                We don&apos;t publish invented results.
               </p>
             </div>
           </div>
@@ -195,7 +195,7 @@ export default function BusinessSolutions() {
                 </h3>
                 <p className="mt-3 leading-relaxed text-dim">
                   What we&apos;ll build, what it costs, and what changes for
-                  you — in writing, before any work starts.
+                  you: in writing, before any work starts.
                 </p>
               </div>
               <div>
@@ -253,7 +253,7 @@ export default function BusinessSolutions() {
                 </dl>
               </div>
               <div className="rounded-lg border border-line bg-surface p-6 shadow-panel sm:p-8">
-                <ContactForm defaultTopic="Business growth — leads, website, CRM" />
+                <ContactForm defaultTopic="Business growth: leads, website, CRM" />
               </div>
             </div>
           </div>
