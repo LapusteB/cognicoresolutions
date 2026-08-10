@@ -11,11 +11,12 @@ type Payload = {
   message?: string;
 };
 
-const TO = process.env.CONTACT_TO ?? "team@cognicoresolutions.com";
-// Resend requires a verified sender; override once cognicoresolutions.com is
-// verified in the Resend dashboard.
+const TO = process.env.CONTACT_TO ?? "lapusteb@outlook.com";
+const CC = process.env.CONTACT_CC ?? "team@cognicoresolutions.com";
+// glonboarding.com is already a verified sending domain in Resend, reused
+// here so cognicoresolutions.com doesn't need its own DNS verification.
 const FROM =
-  process.env.CONTACT_FROM ?? "Cognicore Website <onboarding@resend.dev>";
+  process.env.CONTACT_FROM ?? "Cognicore Solutions <notifications@glonboarding.com>";
 
 export async function POST(req: Request) {
   let body: Payload;
@@ -60,6 +61,7 @@ export async function POST(req: Request) {
   const { error } = await resend.emails.send({
     from: FROM,
     to: [TO],
+    cc: [CC],
     replyTo: email,
     subject: `Website inquiry from ${name}${body.company ? ` (${body.company.trim()})` : ""}`,
     text: [
